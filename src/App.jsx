@@ -1,5 +1,23 @@
+import Tab from "./components/Tab/Tab";
+import TaskList from "./components/TaskList/TaskList";
+import Title from "./components/Title/Title";
+import { GlobalStyles } from "./styles/GlobalStyles";
+
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+
+	return (
+
+		<>
+			<GlobalStyles />
+			<Title />
+			<Tab />	
+			<TaskList />
+		
+		</>
+	
+		)
+
 };
 
 export default App;
