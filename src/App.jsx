@@ -1,23 +1,24 @@
-import Tab from "./components/Tab/Tab";
-import TaskList from "./components/TaskList/TaskList";
-import Title from "./components/Title/Title";
+import { useState } from "react";
+import { ContainerMain } from "./components/ContainerMain/ContainerMain";
 import { GlobalStyles } from "./styles/GlobalStyles";
 
 
 const App = () => {
+	
+	const [dark, setDark] = useState(false);
 
 	return (
 
 		<>
-			<GlobalStyles />
-			<Title />
-			<Tab />	
-			<TaskList />
-		
+			<GlobalStyles  dark={dark}/>
+			<ContainerMain dark={dark} setDark={setDark}/>
 		</>
 	
 		)
 
 };
+
+
+
 
 export default App;
